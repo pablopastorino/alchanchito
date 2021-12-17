@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: #ecf0f396;
+  font-family: poppins;
+  color: grey;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: dodgerblue;
+  letter-spacing: 1px;
+}
+
+header > h1 {
+  margin-bottom: 0;
+  font-size: 5vw;
+}
+
+header > h2 {
+  margin: 0 auto 1rem;
+  font-size: 3.5vw;
+  color: darkmagenta;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+
+  width: 50vw;
+  border: 1rem solid #ecf0f3;
+  border-radius: 1rem;
+  padding: 12% 10% 8%;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  background: url("../images/piggy-bank.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-color: #ecf0f396;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  border-color: hotpink;
+}
+
+legend {
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.5rem;
+  font-weight: 700;
+}
+
+div.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section > input {
+  width: 90%;
+
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 2.5rem;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+label {
+  font-weight: 700;
+}
+
+abbr {
+  font-weight: bold;
+}
+
+div.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-self: stretch;
+
+  margin: 1rem 0;
+}
+
+.buttons input {
+  margin-top: 20px;
+  background: dodgerblue;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.3rem;
+}
+
+.buttons input:nth-child(2) {
+  background-color: darkmagenta;
+}
+
+.buttons input:hover {
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.winner {
+  background-color: lightseagreen;
+  color: white;
+  border: lightseagreen;
+}
+
+.loser {
+  background-color: crimson;
+  color: white;
+  border: crimson;
+}
+
+.tie {
+  background-color: yellow;
+  color: white;
+  border: yellow;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: auto;
+    height: 100vh;
+    margin: 0;
+  }
+  form {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .image {
+    margin: 0;
+  }
+
+  .buttonos,
+  .buttons > input {
+    padding: 0;
+    margin: 0;
+  }
+}

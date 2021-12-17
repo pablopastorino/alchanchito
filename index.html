@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/piggy-bank.png">
+    <title>¿Cómo pago?</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" async></script>
+</head>
+
+<body>
+    <header>
+        <h1>¡Compará tus opciones de pago!</h1>
+        <h2>Y comprá como te convenga</h2>
+    </header>
+    <main>
+        <form action="#">
+            <div class="image"></div>
+            <fieldset class="metodo-1">
+                <legend>OPCION 1</legend>
+                <label for="cantidad-1">N° CUOTAS</label>
+                <div class="section">
+                    <input type="number" name="cantidad-1" id="cantidad-1" min="0" max="120"
+                        placeholder="Ejemplo: 0 (contado)" required>
+                    <abbr
+                        title="0 (Contado o Débito) &#13;&#10;1 (Crédito en 1 pago) &#13;&#10;cantidad (n° de Cuotas)">!</abbr>
+                </div>
+                <label for=" importe-1">IMPORTE $</label>
+                <div class="section">
+                    <input type="text" name="importe-1" id="importe-1" min="0" placeholder="Ejemplo: $5.000" required>
+
+                </div>
+            </fieldset>
+            <fieldset class="metodo-2">
+                <legend>OPCION 2</legend>
+                <label for="cantidad-2">N° sCUOTAS</label>
+                <div class="section">
+                    <input type="number" name="cantidad-2" id="cantidad-2" min="0" max="120" placeholder="Ejemplo: 3"
+                        required>
+                    <abbr
+                        title="0 (Contado o Débito) &#13;&#10;1 (Crédito en 1 pago) &#13;&#10;cantidad (n° de Cuotas)">!</abbr>
+                </div>
+                <label for="importe-2">IMPORTE $</label>
+                <div class="section">
+                    <input type="text" name="importe-2" id="importe-2" min="0" placeholder="Ejemplo: $1.800" required>
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="COMPARAR">
+                <input type="reset" value="BORRAR">
+            </div>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
